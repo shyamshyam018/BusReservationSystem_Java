@@ -1,8 +1,22 @@
 package src.BusRev;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class BusDemo {
+    
    public static void main(String[] args) {
+
+    ArrayList<Bus> buses = new ArrayList<Bus>();
+    
+    buses.add(new Bus(1,true,5));
+    buses.add(new Bus(2,false,10));
+    buses.add(new Bus(3,true,5));
+   
+    
+    for(Bus b : buses){
+        b.showBuses();
+    }
+
     int userOpt = 1;
     Scanner scanner = new Scanner(System.in);
     while(userOpt==1){
@@ -12,5 +26,6 @@ public class BusDemo {
             System.out.println("Booking...");
         }
     }
+    scanner.close();
    }
 }
