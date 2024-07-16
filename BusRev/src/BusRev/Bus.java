@@ -23,6 +23,9 @@ public class Bus {
     public int FindCapacity(){
         return Capacity;
     }
+    public void showBuses(){
+        System.out.println("BusNum : "+BusNum+", Ac Available? : " +Ac+", Capacity : "+Capacity);
+    }
 
     //setters
     public void SetCapacity(int cap){ 
