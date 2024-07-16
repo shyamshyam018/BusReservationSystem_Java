@@ -57,5 +57,12 @@ BusReservationSystem/
 │       └── BusDemo.java
 │
 └── README.md
+```
+
+## Contribution
+I welcome contributions to enhance the functionality of this project. Feel free to fork the repository and submit pull requests.
+
+### License
+This project is licensed under the MIT License.
 
 
