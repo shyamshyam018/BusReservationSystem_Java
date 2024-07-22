@@ -24,7 +24,7 @@ Welcome to the **Bus Reservation System**, a simple command-line application dev
 ### Installation
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/BusReservationSystem.git
+    git clone https://github.com/shyamshyam018/BusReservationSystem.git
     ```
 2. **Navigate to the project directory**:
     ```sh
