@@ -1,6 +1,6 @@
 # 🚌 Bus Reservation System
 
-Welcome to the **Bus Reservation System**, a simple command-line application developed in Java that simulates a bus reservation system.
+Welcome to the **Bus Reservation System**, a simple command-line application developed in Java that simulates a bus reservation system...
 
 ## Features
 - **Book Buses Based on Actual Vacancy**: Ensure that bookings are made only if seats are available.
