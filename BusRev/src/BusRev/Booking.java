@@ -1,42 +1,50 @@
 package src.BusRev;
 
-import java.util.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
 
 public class Booking {
-    String PassengerName;
-    int BusNum;
+    int busNo;
     Date date;
+    int numPassengers;
 
-    public Booking(Scanner scanner) {
-        System.out.print("Enter Passenger Name: ");
-        PassengerName = scanner.next();
+    Booking(Scanner scanner) {
         System.out.print("Enter Bus Number: ");
-        BusNum = scanner.nextInt();
+        busNo = scanner.nextInt();
+        scanner.nextLine(); // consume newline
         System.out.print("Enter Date (dd-MM-yyyy): ");
-        String stringdate = scanner.next();
-        SimpleDateFormat objdate = new SimpleDateFormat("dd-MM-yyyy");
+        String dateStr = scanner.nextLine();
+        System.out.print("Enter Number of Passengers: ");
+        numPassengers = scanner.nextInt();
+        scanner.nextLine(); // consume newline
+
+        SimpleDateFormat objDate = new SimpleDateFormat("dd-MM-yyyy");
         try {
-            date = objdate.parse(stringdate);
+            date = objDate.parse(dateStr);
         } catch (ParseException e) {
             e.printStackTrace();
         }
     }
 
-    public boolean isAvailable(ArrayList<Booking> bookings, ArrayList<Bus> buses) {
+    boolean isAvailable(ArrayList<Booking> bookings, ArrayList<Bus> buses) {
         int capacity = 0;
-        for (Bus b : buses) {
-            if (b.FindBusNo() == BusNum) {
-                capacity = b.FindCapacity();
+        for (Bus bus : buses) {
+            if (bus.getBusNo() == busNo) {
+                capacity = bus.getCapacity();
+                break;
             }
         }
-        int booked = 0;
-        for (Booking bo : bookings) {
-            if (bo.BusNum == BusNum && bo.date.equals(date)) {
-                booked++;
+
+        int bookedSeats = 0;
+        for (Booking booking : bookings) {
+            if (booking.busNo == busNo && booking.date.equals(date)) {
+                bookedSeats += booking.numPassengers;
             }
         }
-        return booked < capacity;
+
+        return (capacity - bookedSeats) >= numPassengers;
     }
 }

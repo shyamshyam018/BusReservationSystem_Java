@@ -1,35 +1,35 @@
 package src.BusRev;
 
 public class Bus {
-    private int BusNum;
-    private boolean Ac;
-    private int Capacity;
+    private int busNo;
+    private boolean ac;
+    private int capacity;
 
-    Bus(int bn , boolean ac , int cap){
-        this.BusNum = bn;
-        this.Ac = ac;
-        this.Capacity = cap;
-    }
-
-    //Creating getter and setter functions
-
-    //getters
-    public int FindBusNo(){  
-        return BusNum;
-    }
-    public boolean FindAC(){
-        return Ac;
-    }
-    public int FindCapacity(){
-        return Capacity;
-    }
-    public void showBuses(){
-        System.out.println("BusNum : "+BusNum+", Ac Available? : " +Ac+", Capacity : "+Capacity);
+    public Bus(int busNo, boolean ac, int capacity) {
+        this.busNo = busNo;
+        this.ac = ac;
+        this.capacity = capacity;
     }
 
-    //setters
-    public void SetCapacity(int cap){ 
-        Capacity = cap;
+    // Getters
+    public int getBusNo() {
+        return busNo;
+    }
+
+    public boolean isAc() {
+        return ac;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    // Setters
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public void showBuses() {
+        System.out.println("Bus Number: " + busNo + ", AC Available? " + ac + ", Capacity: " + capacity);
     }
 }
-
