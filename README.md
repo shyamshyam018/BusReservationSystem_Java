@@ -64,7 +64,7 @@ I welcome contributions to enhance the functionality of this project. Feel free 
 
 ## Contributors
 
-### [Chandri02](https://github.com/chandri02)
+# [Chandri02](https://github.com/chandri02)
 - **Role:** UI and Feature Engineer
 - **Contributions:** Implemented Appealing UI and Developed a new Feature of Search and filter functionality.
 
