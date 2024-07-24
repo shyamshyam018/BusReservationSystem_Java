@@ -62,16 +62,6 @@ BusReservationSystem/
 ## Contribution
 I welcome contributions to enhance the functionality of this project. Feel free to fork the repository and submit pull requests.
 
-
-## Contributors
-
-Thank you to all the contributors!
-
-| [![Chandri02](https://avatars.githubusercontent.com/chandri02?v=4)](https://github.com/chandri02) |
-|:---:|
-| [Chandri02](https://github.com/chandri02) |
-
-
 ### License
 This project is licensed under the MIT License.
 
