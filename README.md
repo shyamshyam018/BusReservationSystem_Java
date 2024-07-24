@@ -62,6 +62,9 @@ BusReservationSystem/
 ## Contribution
 I welcome contributions to enhance the functionality of this project. Feel free to fork the repository and submit pull requests.
 
+## Contributors
+[![Contributors](https://img.shields.io/badge/contributors-1-blue)](CONTRIBUTORS.md)
+
 ### License
 This project is licensed under the MIT License.
 
